@@ -79,6 +79,21 @@ type Value struct {
 
 	// Provider used to get credentials
 	ProviderName string
+
+	// The Role ARN to assume
+	RoleARN string
+
+	// The session name for sharing this role
+	RoleSessionName string
+
+	// The profile to use to assume a role
+	SourceProfile string
+
+	// The MFA Serial ARN if using an MFA device
+	MFASerial string
+
+	// The external ID that provides these credentials
+	ExternalID string
 }
 
 // A Provider is the interface for any component which will provide credentials
